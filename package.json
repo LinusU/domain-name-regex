@@ -1,0 +1,13 @@
+{
+  "name": "domain-name-regex",
+  "version": "0.0.0",
+  "licence": "MIT",
+  "repository": "LinusU/domain-name-regex",
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.0",
+    "standard": "^10.0.3"
+  }
+}
