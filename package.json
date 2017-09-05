@@ -1,6 +1,6 @@
 {
   "name": "domain-name-regex",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "licence": "MIT",
   "repository": "LinusU/domain-name-regex",
   "scripts": {
