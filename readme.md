@@ -27,6 +27,5 @@ domainNameRegex.test('invalid.123')
 
 + Domain name length cannot exceed 253 characters
 + Label length cannot exceed 63 characters
-+ Label can only consist of letters, digits, hypen (LDH)
-+ A single underscore at the beginning of a label is permitted
-+ TLD cannot contain only numbers
++ Label can only consist of letters, digits, hypen and underscores (LDHU)
++ TLD cannot contain only numbers or underscores
