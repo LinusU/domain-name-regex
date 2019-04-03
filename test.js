@@ -36,7 +36,8 @@ describe('Domain Name Regex', () => {
     setup('test.t.t.co')
     setup('test.xn--xkc2al3hye2a')
     setup('tedjgkghdfs.fgahfdsjfh.asfha.jsdhfksdfhsdjfhkasd.fhasdjfkhaddjgkghdfs.fgahfdsjfh.asfha.jsdhfksdfhsdjfhkasd.fhadjgkghdfs.fgahfdsjfh.asfha.jsdhfksdfhsdjfhkasd.fhasdjfkhaddjgkghdfs.fgahfdsjfh.asfha.jsdhfksdfhsdjfhkasd.fhasdjfkhadsjfasd.fhsadjfsdhf.asst.com')
-    setup('_dmarc.google.com')
+    setup('_dmarc.example.com')
+    setup('_sip._tcp.example.com')
   })
 
   describe('Invalid names', () => {
@@ -68,6 +69,14 @@ describe('Domain Name Regex', () => {
     setup('test-.com')
     setup('test.-com')
     setup('test.com-')
+
+    // Underscore on positions other than beginning
+    setup('0-0O_.COM')
+    setup('te_st.com')
+    setup('test.com_')
+    setup('test._com')
+    setup('__test.com')
+    setup('_test.__test.com')
 
     // TLD consists of only numbers
     setup('test.123')
