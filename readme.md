@@ -16,6 +16,9 @@ const domainNameRegex = require('domain-name-regex')
 domainNameRegex.test('example.com')
 //=> true
 
+domainNameRegex.test('_sip.example.com')
+//=> true
+
 domainNameRegex.test('-invalid.com')
 //=> false
 
@@ -26,6 +29,8 @@ domainNameRegex.test('invalid.123')
 ## Rules
 
 + Domain name length cannot exceed 253 characters
-+ Label length cannot exceed 63 chaacters
-+ Label can only consist of letters, digits and hypen (LDH)
++ Label length cannot exceed 63 characters
++ Label can only consist of letters, digits, hyphens and underscores (LDHU)
++ Label cannot start or end with a hyphen
 + TLD cannot contain only numbers
++ TLD cannot contain any underscores
